@@ -6,7 +6,7 @@ from transformers import BertForSequenceClassification as bc
 from torch.utils.data import Dataset
 from torch.optim import AdamW
 
-df = pd.read_csv("forbb.csv")
+df = pd.read_csv("review_labels.csv")
 print(df.head(-10))
 labels = torch.tensor(df["label"].values)
 
